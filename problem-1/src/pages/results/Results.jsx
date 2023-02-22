@@ -88,7 +88,7 @@ const BestMatchRightLowerContainer = styled.div`
 const BestMatchRightLower = styled.div`
   display: flex;
   border-left: 1.5px dashed rgba(0, 0, 0, .5);
-  width: 24.9%;
+  width: 24.5%;
   @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}){
     width: 100%;
     border-top: 1.5px dashed rgba(0, 0, 0, .5);
