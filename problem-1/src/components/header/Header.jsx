@@ -5,34 +5,37 @@ const HeaderContainer = styled.nav`
   background-color: ${(props) => props.theme.colors.primaryBlack};
   color: ${(props) => props.theme.colors.primaryWhite};
   width: 100%;
-  height: 100px;
+  height: 155px;
   display: flex;
   position: sticky;
   top: 0;
   z-index: 999;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}){
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
 `;
 
 const HeaderTitle = styled.h1`
+  display: flex;
   margin: 0;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-
-  @media screen and (max-width: 768px) {
-    left: 5%;
-    -ms-transform: translate(-5%, -50%);
+  font-size: ${(props) => props.theme.fontSizes.large});
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}){
     transform: translate(-5%, -50%);
+    font-size: ${(props) => props.theme.fontSizes.medium});
   }
 `;
 
 const HeaderMenuIcon = styled.i`
   position: absolute;
   top: 50%;
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: 2rem;
+  right: 5rem;
 `;
 
 function Header() {

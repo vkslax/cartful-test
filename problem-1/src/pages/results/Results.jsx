@@ -18,10 +18,18 @@ const ResultsContainer = styled.div`
 `;
 const QuestionText = styled.h1`
   font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin: 1rem;
 `;
 const SubtitleText = styled.p`
-font-weight: 400;
+  font-weight: 400;
   font-size: ${(props) => props.theme.fontSizes.xsmall};
+  text-align: center;
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}){
+    font-size: ${(props) => props.theme.fontSizes.small};
+    margin: 0 1rem 0 1rem;
+  }
   `;
 const LinksContainer = styled.div`
   display: flex;
@@ -36,35 +44,60 @@ const BestMatchContainer = styled.div`
   margin: 1rem;
   background-color: ${(props) => props.theme.colors.primaryDarkBeige};
   width: 60%;
+  flex-wrap: wrap;
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}){
+   width: 90%;
+  }
 `;
 
 const BestMatchLeft = styled.div`
   display: flex;
   width: 33%;
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}){
+    width: 100%;
+  }
 `;
 
 const BestMatchRight = styled.div`
   display: flex;
   flex-direction: column;
   width: 66%;
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}){
+    width: 100%;
+  }
   `;
 const BestMatchRightUpper = styled.div`
   width: 100%;
   border-left: 1.5px dashed rgba(0, 0, 0, .5);
   border-bottom: 1.5px dashed rgba(0, 0, 0, .5);
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}){
+    border-top: 1.5px dashed rgba(0, 0, 0, .5);
+    border-left: none;
+    padding: 1.5rem 0 1.5rem 0;
+    border-bottom: none;
+  }
+  
 `;
 const BestMatchRightLowerContainer = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
   height: 100%;
+  flex-wrap: wrap;
   `;
 const BestMatchRightLower = styled.div`
   display: flex;
   border-left: 1.5px dashed rgba(0, 0, 0, .5);
-  width: 25%;
+  width: 24.9%;
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}){
+    width: 100%;
+    border-top: 1.5px dashed rgba(0, 0, 0, .5);
+    border-left: none;
+    padding: 1.5rem 0 1.5rem 0;
+  }
 `;
 const LoveItTitle = styled.p`
+  letter-spacing: 0.16em;
   font-weight: 400;
   font-size: ${(props) => props.theme.fontSizes.xsmall};
   opacity: 0.7;

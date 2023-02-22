@@ -4,7 +4,8 @@ import styled from 'styled-components';
 const ButtonContainer = styled.div`
   border-bottom: 2px ${(props) => props.theme.colors.primaryBlack} solid;
   cursor: pointer;
-  height: 1.1rem;
+  font-size: ${(props) => props.theme.fontSizes.mediumSmall};
+  height:  ${(props) => props.theme.fontSizes.medium};
 `;
 function LinkButton(props) {
   const {

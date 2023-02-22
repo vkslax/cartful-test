@@ -18,6 +18,10 @@ const NavigationItem = styled.div`
   border-radius: 50%;
   width: 1.3rem;
   height: 1.3rem;
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}){
+    width: 1.5rem;
+    height: 1.5rem;
+  }
   background-color: ${(props) => (props.state === REMAINING ? props.theme.colors.primaryWhite
     : props.state === CURRENT ? props.theme.colors.secondarySeabrightYellow
       : props.theme.colors.primaryBlack)};

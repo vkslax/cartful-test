@@ -26,8 +26,13 @@ const theme = {
   fontSizes: {
     xsmall: '0.8em',
     small: '1em',
+    mediumSmall: '1.2em',
     medium: '1.5em',
-    large: '3em',
+    large: '2rem',
+  },
+  breakpoints: {
+    mobile: '480px',
+    tablet: '768px', // tablet breakpoint will not be used in this project
   },
 };
 export default theme;

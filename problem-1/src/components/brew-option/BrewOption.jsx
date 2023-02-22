@@ -10,6 +10,11 @@ const BrewOptionContainer = styled.div`
   width: 150px;
   background-color: ${(props) => ((!props.attenuate) ? props.color : props.theme.colors.primaryDarkBeige)};
   margin: 1rem;
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}){
+    margin: 0.5rem;
+    width: 155px;
+    height: 130px;
+  }
 `;
 
 const ImgContainer = styled.div`

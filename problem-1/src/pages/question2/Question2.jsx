@@ -26,35 +26,51 @@ align-items: center;
 const OptionsContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-start;
   min-height: 35vh;
+  flex-wrap: wrap;
 `;
 
 const QuestionText = styled.h1`
   font-weight: 400;
   padding: 1rem;
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}){
+    font-size: ${(props) => props.theme.fontSizes.medium};
+  }
 `;
 
 const FirstLeftItem = styled.div`
-  transform:rotate(-12deg) translateY(56px);
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.mobile}){
+    transform:rotate(-12deg) translateY(56px);
+  }
 `;
 const SecondLeftItem = styled.div`
-  transform:rotate(-8deg) translateY(24px);
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.mobile}){
+    transform:rotate(-8deg) translateY(24px);
+  }
 `;
 const ThirdLeftItem = styled.div`
-  transform:rotate(-4deg) translateY(6px);
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.mobile}){
+    transform:rotate(-4deg) translateY(6px);
+  }
 `;
 const CenterItem = styled.div`
   `;
 const FirstRightItem = styled.div`
-  transform:rotate(4deg) translateY(6px);
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.mobile}){
+    transform:rotate(4deg) translateY(6px);
+  }
 `;
 const SecondRightItem = styled.div`
-  transform:rotate(8deg) translateY(24px);
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.mobile}){
+    transform:rotate(8deg) translateY(24px);
+  }
 `;
 const ThirdRightItem = styled.div`
-  transform:rotate(12deg) translateY(56px);
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.mobile}){
+    transform:rotate(12deg) translateY(56px);
+  }
 `;
 
 const ButtonContainer = styled.div`
@@ -146,7 +162,6 @@ function Question2() {
   }, [selectedOption]);
 
   const handleContinue = () => {
-    console.log(selectedOption);
     navigate('/results');
   };
   /* REFACTOR SUGGESTION: Auto-generate the options based on a JSON.
