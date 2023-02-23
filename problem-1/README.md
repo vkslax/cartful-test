@@ -13,7 +13,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   since Figma was only using bars.
 - components folder could be divided into more folders, but I decided to keep it simple
   for the sake of time. (e.g. components/atoms, components/molecules, components/organisms if atomic design is used).
-- Same as components folders, assets folder could be reorganized to have a folder for each type of asset and result (e.g. brews, coffee types, roast levels, etc.). 
+- Same as components folders, assets folder could be reorganized to have a folder for each type of asset and result (e.g. brews, coffee types, roast levels, etc.).
+- Due to React Router 6.x and React Strict Mode, the root component seems to render twice in development mode.
 
 ### Pending integrations: 
 - Prettier to format the code.
