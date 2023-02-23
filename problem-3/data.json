@@ -1,0 +1,70 @@
+[
+  {
+    "questionId": 1,
+    "questionName": "What is your favorite color?",
+    "answers": [
+      {
+        "answerId": 11,
+        "answerName": "Red"
+      },
+      {
+        "answerId": 12,
+        "answerName": "Blue"
+      },
+      {
+        "answerId": 13,
+        "answerName": "Pink"
+      }
+    ]
+  },
+  {
+    "questionId": 2,
+    "questionName": "What is your favorite animal?",
+    "answers": [
+      {
+        "answerId": 21,
+        "answerName": "Dog"
+      },
+      {
+        "answerId": 22,
+        "answerName": "Cat"
+      },
+      {
+        "answerId": 23,
+        "answerName": "Bird"
+      }
+    ]
+  },
+  {
+    "questionId": 3,
+    "questionName": "What is your favorite food?",
+    "answers": [
+      {
+        "answerId": 31,
+        "answerName": "Pizza"
+      },
+      {
+        "answerId": 32,
+        "answerName": "Burger"
+      }
+    ]
+  },
+  {
+    "questionId": 4,
+    "questionName": "What is your favorite drink?",
+    "answers": [
+      {
+        "answerId": 41,
+        "answerName": "Coke"
+      },
+      {
+        "answerId": 42,
+        "answerName": "Pepsi"
+      },
+      {
+          "answerId": 43,
+          "answerName": "Sprite"
+      }
+    ]
+  }
+]
