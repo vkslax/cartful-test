@@ -20,7 +20,11 @@ const QuestionText = styled.h1`
   font-weight: 400;
   text-align: center;
   letter-spacing: 0.06em;
-  margin: 1rem;
+  margin: 1rem 2rem 1rem 2rem;
+  font-size: ${(props) => props.theme.fontSizes.xlarge};
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}){
+    font-size: ${(props) => props.theme.fontSizes.medium};
+  }
 `;
 const SubtitleText = styled.p`
   font-weight: 400;
@@ -45,7 +49,7 @@ const BestMatchContainer = styled.div`
   background-color: ${(props) => props.theme.colors.primaryDarkBeige};
   width: 60%;
   flex-wrap: wrap;
-  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}){
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}){
    width: 90%;
   }
 `;
@@ -53,7 +57,7 @@ const BestMatchContainer = styled.div`
 const BestMatchLeft = styled.div`
   display: flex;
   width: 33%;
-  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}){
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}){
     width: 100%;
   }
 `;
@@ -62,7 +66,7 @@ const BestMatchRight = styled.div`
   display: flex;
   flex-direction: column;
   width: 66%;
-  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}){
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}){
     width: 100%;
   }
   `;
@@ -70,7 +74,7 @@ const BestMatchRightUpper = styled.div`
   width: 100%;
   border-left: 1.5px dashed rgba(0, 0, 0, .5);
   border-bottom: 1.5px dashed rgba(0, 0, 0, .5);
-  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}){
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}){
     border-top: 1.5px dashed rgba(0, 0, 0, .5);
     border-left: none;
     padding: 1.5rem 0 1.5rem 0;
@@ -88,10 +92,13 @@ const BestMatchRightLowerContainer = styled.div`
 const BestMatchRightLower = styled.div`
   display: flex;
   border-left: 1.5px dashed rgba(0, 0, 0, .5);
-  width: 24.5%;
+  width: 24.6%;
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.tablet}){
+    border-left: ${(props) => (!props.firstItem ? '1.5px dashed rgba(0, 0, 0, .5)' : 'none')};
+    border-top: 1.5px dashed rgba(0, 0, 0, .5);
+  }
   @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}){
     width: 100%;
-    border-top: 1.5px dashed rgba(0, 0, 0, .5);
     border-left: none;
     padding: 1.5rem 0 1.5rem 0;
   }
@@ -107,7 +114,12 @@ const LoveItText = styled.p`
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  margin: 1.5rem 4rem 1.5rem 4rem;
+  margin: 1.5rem 3rem 1.5rem 3rem;
+  font-size: ${(props) => props.theme.fontSizes.medium};
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.mobile}){
+    font-size: ${(props) => props.theme.fontSizes.small};
+    text-align: left;
+  }
 `;
 function Results() {
   return (
@@ -134,7 +146,7 @@ function Results() {
             </LoveItText>
           </BestMatchRightUpper>
           <BestMatchRightLowerContainer>
-            <BestMatchRightLower>
+            <BestMatchRightLower firstItem>
               <CoffeeCharacteristic
                 title="TASTING NOTES"
                 icon={tastingNotesIcon}
