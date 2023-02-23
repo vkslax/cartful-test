@@ -16,6 +16,9 @@ const TitleText = styled.h2`
 `;
 const ImgContainer = styled.div`
   width: 80%;
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.mobile}) and (max-width: ${(props) => props.theme.breakpoints.tablet}){
+    width: 337px; //original image size since have lots of space on sides
+  }
 `;
 const CoffeeNameText = styled.h3`
   font-weight: 400;

@@ -41,34 +41,34 @@ const QuestionText = styled.h1`
 `;
 
 const FirstLeftItem = styled.div`
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.mobile}){
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}){
     transform:rotate(-12deg) translateY(56px);
   }
 `;
 const SecondLeftItem = styled.div`
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.mobile}){
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}){
     transform:rotate(-8deg) translateY(24px);
   }
 `;
 const ThirdLeftItem = styled.div`
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.mobile}){
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}){
     transform:rotate(-4deg) translateY(6px);
   }
 `;
 const CenterItem = styled.div`
   `;
 const FirstRightItem = styled.div`
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.mobile}){
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}){
     transform:rotate(4deg) translateY(6px);
   }
 `;
 const SecondRightItem = styled.div`
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.mobile}){
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}){
     transform:rotate(8deg) translateY(24px);
   }
 `;
 const ThirdRightItem = styled.div`
-  @media screen and (min-width: ${(props) => props.theme.breakpoints.mobile}){
+  @media screen and (min-width: ${(props) => props.theme.breakpoints.tablet}){
     transform:rotate(12deg) translateY(56px);
   }
 `;

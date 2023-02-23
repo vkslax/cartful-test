@@ -10,7 +10,6 @@ async function mapData(){
 // if no more answers empty string is added in order to continue the table
   const rows = answers[0].map((col, i) => answers.map(row => row[i] || ''));
   const csvContent = [questions.join(', '), ...rows.map(r => r.join(', '))].join('\n');
-  console.log(csvContent)
   return csvContent;
 }
 

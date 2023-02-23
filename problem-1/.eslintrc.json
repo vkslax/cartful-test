@@ -19,6 +19,7 @@
     "rules": {
         "react/prop-types": "off",
         "no-nested-ternary": "off",
-        "no-unused-vars": "warn"
+        "no-unused-vars": "warn",
+        "linebreak-style": ["error", "windows"]
     }
 }

@@ -29,10 +29,11 @@ const theme = {
     mediumSmall: '1.2em',
     medium: '1.5em',
     large: '2rem',
+    xlarge: '3rem',
   },
   breakpoints: {
     mobile: '480px',
-    tablet: '768px', // tablet breakpoint will not be used in this project
+    tablet: '1024px',
   },
 };
 export default theme;
